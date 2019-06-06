@@ -1,6 +1,6 @@
 {
-    "identity": "custom",
-    "name": "Custom Testnet",
+    "identity": "kensington",
+    "name": "Kensington Testnet",
     "state": {
         "startingNonce": 1048576
     },
