@@ -1,120 +1,171 @@
 {
-	"name": "Kensington Testnet",
-	"dataDir": "kensington",
-	"engine": {
-		"Ethash": {
-			"params": {
-				"minimumDifficulty": "0x020000",
-				"difficultyBoundDivisor": "0x0800",
-				"durationLimit": "0x0d",
-				"blockReward": "0x4563918244F40000",
-				"homesteadTransition": 10,
-				"daoHardforkTransition": 20,
-				"ecip1010PauseTransition": 25,
-				"ecip1010ContinueTransition": 30,
-				"ecip1017EraRounds": 5,
-				"bombDefuseTransition": 35
+	"name":"Kensington Testnet",
+	"dataDir":"kensington",
+	"engine":{
+		"Ethash":{
+			"params":{
+				"minimumDifficulty":"0x020000",
+				"difficultyBoundDivisor":"0x0800",
+				"durationLimit":"0x0d",
+				"blockReward":"0x4563918244F40000",
+				"homesteadTransition":10,
+				"daoHardforkTransition":20,
+				"ecip1010PauseTransition":25,
+				"ecip1010ContinueTransition":30,
+				"ecip1017EraRounds":5,
+				"bombDefuseTransition":35
 			}
 		}
 	},
-	"params": {
-		"gasLimitBoundDivisor": "0x0400",
-		"accountStartNonce": 1048576,
-		"maximumExtraDataSize": "0x20",
-		"minGasLimit": "0x1388",
-		"networkID" : 88,
-		"chainID": 62,
-		"eip150Transition": 15,
-		"eip160Transition": 25,
-		"eip161abcTransition": 40,
-		"eip161dTransition": 40,
-		"eip155Transition": 25,
-		"maxCodeSize": "0x6000",
-		"maxCodeSizeTransition": 40,
-		"eip140Transition": 40,
-		"eip211Transition": 40,
-		"eip214Transition": 40,
-		"eip658Transition": 40
+	"params":{
+		"gasLimitBoundDivisor":"0x0400",
+		"accountStartNonce":1048576,
+		"maximumExtraDataSize":"0x20",
+		"minGasLimit":"0x1388",
+		"networkID":88,
+		"chainID":62,
+		"eip150Transition":15,
+		"eip160Transition":25,
+		"eip161abcTransition":40,
+		"eip161dTransition":40,
+		"eip155Transition":25,
+		"maxCodeSize":"0x6000",
+		"maxCodeSizeTransition":40,
+		"eip140Transition":40,
+		"eip211Transition":40,
+		"eip214Transition":40,
+		"eip658Transition":40
 	},
-	"genesis": {
-		"seal": {
-			"ethereum": {
-				"nonce": "0x00006d6f7264656e",
-				"mixHash": "0x00000000000000000000000000000000000000647572616c65787365646c6578"
+	"genesis":{
+		"seal":{
+			"ethereum":{
+				"nonce":"0x00006d6f7264656e",
+				"mixHash":"0x00000000000000000000000000000000000000647572616c65787365646c6578"
 			}
 		},
-		"difficulty": "0x020000",
-		"author": "0x0000000000000000000000000000000000000000",
-		"timestamp": "0x00",
-		"parentHash": "0x0000000000000000000000000000000000000000000000000000000000000000",
-		"extraData": "0x",
-		"gasLimit": "0x2FEFD8"
+		"difficulty":"0x020000",
+		"author":"0x0000000000000000000000000000000000000000",
+		"timestamp":"0x00",
+		"parentHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
+		"extraData":"0x",
+		"gasLimit":"0x2FEFD8"
 	},
-	"nodes": [
-    "enode://f1505568e16f51e0e123fb6251b0aa1ea737505635ea7f52f154ad4b0d66ee86bd568c53bfebfca227bd9ed5653138a716d720a1bc8e44026e47f97a2f24f8e6@104.248.234.109:30303",
-    "enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303",
-    "enode://c5413ea33d44de5610a230c7a7322cc50531fa2341871ab54326c29ef7a6dac6f614d97ece75511f5a6f4885b32f42d77cb0f076cc14e82da1cfa289f4714227@127.0.0.1:30303"
+	"nodes":[
+		"enode://f1505568e16f51e0e123fb6251b0aa1ea737505635ea7f52f154ad4b0d66ee86bd568c53bfebfca227bd9ed5653138a716d720a1bc8e44026e47f97a2f24f8e6@104.248.234.109:30303",
+		"enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303",
+		"enode://c5413ea33d44de5610a230c7a7322cc50531fa2341871ab54326c29ef7a6dac6f614d97ece75511f5a6f4885b32f42d77cb0f076cc14e82da1cfa289f4714227@127.0.0.1:30303"
 	],
-	"accounts": {
-		"0x0000000000000000000000000000000000000001": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ecrecover", "pricing": { "linear": { "base": 3000, "word": 0 } } } },
-		"0x0000000000000000000000000000000000000002": { "balance": "1", "nonce": "1048576", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
-		"0x0000000000000000000000000000000000000003": { "balance": "1", "nonce": "1048576", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
-		"0x0000000000000000000000000000000000000004": { "balance": "1", "nonce": "1048576", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
-		"0x0000000000000000000000000000000000000005": {
-			"builtin": {
-				"name": "modexp",
-				"activate_at": 40,
-				"pricing": {
-					"modexp": {
-						"divisor": 20
+	"accounts":{
+		"0x0000000000000000000000000000000000000001":{
+			"balance":"1",
+			"nonce":"1048576",
+			"builtin":{
+				"name":"ecrecover",
+				"pricing":{
+					"linear":{
+						"base":3000,
+						"word":0
+					}
+				}
+			}
+		},
+		"0x0000000000000000000000000000000000000002":{
+			"balance":"1",
+			"nonce":"1048576",
+			"builtin":{
+				"name":"sha256",
+				"pricing":{
+					"linear":{
+						"base":60,
+						"word":12
+					}
+				}
+			}
+		},
+		"0x0000000000000000000000000000000000000003":{
+			"balance":"1",
+			"nonce":"1048576",
+			"builtin":{
+				"name":"ripemd160",
+				"pricing":{
+					"linear":{
+						"base":600,
+						"word":120
+					}
+				}
+			}
+		},
+		"0x0000000000000000000000000000000000000004":{
+			"balance":"1",
+			"nonce":"1048576",
+			"builtin":{
+				"name":"identity",
+				"pricing":{
+					"linear":{
+						"base":15,
+						"word":3
+					}
+				}
+			}
+		},
+		"0x0000000000000000000000000000000000000005":{
+			"builtin":{
+				"name":"modexp",
+				"activate_at":40,
+				"pricing":{
+					"modexp":{
+						"divisor":20
 					}
 				}
 			},
-				"balance": 1,
-				"nonce": 1048576
+			"balance":1,
+			"nonce":1048576
 		},
-		"0x0000000000000000000000000000000000000006": {
-			"builtin": {
-				"name": "alt_bn128_add",
-				"activate_at": 40,
-				"pricing": {
-					"linear": {
-						"base": 500,
-						"word": 0
+		"0x0000000000000000000000000000000000000006":{
+			"builtin":{
+				"name":"alt_bn128_add",
+				"activate_at":40,
+				"pricing":{
+					"linear":{
+						"base":500,
+						"word":0
 					}
 				}
 			},
-				"balance": 1,
-				"nonce": 1048576
+			"balance":1,
+			"nonce":1048576
 		},
-		"0x0000000000000000000000000000000000000007": {
-			"builtin": {
-				"name": "alt_bn128_mul",
-				"activate_at": 40,
-				"pricing": {
-					"linear": {
-						"base": 40000,
-						"word": 0
+		"0x0000000000000000000000000000000000000007":{
+			"builtin":{
+				"name":"alt_bn128_mul",
+				"activate_at":40,
+				"pricing":{
+					"linear":{
+						"base":40000,
+						"word":0
 					}
 				}
 			},
-				"balance": 1,
-				"nonce": 1048576
+			"balance":1,
+			"nonce":1048576
 		},
-		"0x0000000000000000000000000000000000000008": {
-			"builtin": {
-				"name": "alt_bn128_pairing",
-				"activate_at": 40,
-				"pricing": {
-					"alt_bn128_pairing": {
-						"base": 100000,
-						"pair": 80000
+		"0x0000000000000000000000000000000000000008":{
+			"builtin":{
+				"name":"alt_bn128_pairing",
+				"activate_at":40,
+				"pricing":{
+					"alt_bn128_pairing":{
+						"base":100000,
+						"pair":80000
 					}
 				}
 			},
-				"balance": 1,
-				"nonce": 1048576
+			"balance":1,
+			"nonce":1048576
 		},
-		"0x102e61f5d8f9bc71d0ad4a084df4e65e05ce0e1c": { "balance": "1606938044258990275541962092341162602522202993782792835301376", "nonce": "1048576" }
+		"0x102e61f5d8f9bc71d0ad4a084df4e65e05ce0e1c":{
+			"balance":"1606938044258990275541962092341162602522202993782792835301376",
+			"nonce":"1048576"
+		}
 	}
 }
