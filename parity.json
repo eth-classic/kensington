@@ -28,7 +28,13 @@
 		"eip160Transition": 25,
 		"eip161abcTransition": 40,
 		"eip161dTransition": 40,
-		"eip155Transition": 25
+		"eip155Transition": 25,
+		"maxCodeSize": "0x6000",
+		"maxCodeSizeTransition": 40,
+		"eip140Transition": 40,
+		"eip211Transition": 40,
+		"eip214Transition": 40,
+		"eip658Transition": 40
 	},
 	"genesis": {
 		"seal": {
