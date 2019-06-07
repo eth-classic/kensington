@@ -50,7 +50,7 @@
         "forks":[
             {
                 "name":"Homestead",
-                "block":10,
+                "block":0,
                 "requiredHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
                 "features":[
                     {
@@ -69,7 +69,7 @@
             },
             {
                 "name":"GasReprice",
-                "block":15,
+                "block":0,
                 "requiredHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
                 "features":[
                     {
@@ -82,7 +82,7 @@
             },
             {
                 "name":"The DAO Hard Fork",
-                "block":20,
+                "block":0,
                 "requiredHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
                 "features":[
 
@@ -90,7 +90,7 @@
             },
             {
                 "name":"Diehard",
-                "block":25,
+                "block":0,
                 "requiredHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
                 "features":[
                     {
@@ -108,7 +108,7 @@
                     {
                         "id":"difficulty",
                         "options":{
-                            "length":5,
+                            "length":2000000,
                             "type":"ecip1010"
                         }
                     }
@@ -122,7 +122,7 @@
                     {
                         "id":"reward",
                         "options":{
-                            "era":5,
+                            "era":2000000,
                             "type":"ecip1017"
                         }
                     }
@@ -130,7 +130,8 @@
             },
             {
                 "name":"Defuse Difficulty Bomb",
-                "block":35,
+                "block":0,
+                "requiredHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
                 "features":[
                     {
                         "id":"difficulty",
@@ -142,7 +143,7 @@
             },
             {
                 "name":"Atlantis",
-                "block":40,
+                "block":100,
                 "features":[
                     {
                         "id":"difficulty",
@@ -159,7 +160,11 @@
     },
     "bootstrap":[
         "enode://f1505568e16f51e0e123fb6251b0aa1ea737505635ea7f52f154ad4b0d66ee86bd568c53bfebfca227bd9ed5653138a716d720a1bc8e44026e47f97a2f24f8e6@104.248.234.109:30303",
-        "enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303"
+        "enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303",
+        "enode://3df5970b1aff37c623602a9f028adb37eb52294e2d9704a4a4cbc6b7b1dc63a9ff73a152b6c7e0f6d1256949aae427f4f7f1cd00db5c2d4a7cc52e1663878a6e@104.248.234.109:30301",
+        "enode://c1c3219234174a323f3b28541dbdfa4bad5851d6cdc3d5e95b72b91ca5cdca4d1c70dcb9f45a8932be12edf8f2d8d033bce093e48fc8c904cc3571ca54e8b8f2@104.248.234.109:30303",
+        "enode://06333009fc9ef3c9e174768e495722a7f98fe7afd4660542e983005f85e556028410fd03278944f44cfe5437b1750b5e6bd1738f700fe7da3626d52010d2954c@51.141.15.254:31640",
+        "enode://a87685902a0622e9cf18c68e73a0ea45156ec53e857ef049b185a9db2296ca04d776417bf1901c0b4eacb5b26271d8694e88e3f17c20d49eb77e1a41ab26b5b3@51.141.78.53:31640"
     ],
     "include":null
 }

@@ -8,11 +8,11 @@
 				"difficultyBoundDivisor":"0x0800",
 				"durationLimit":"0x0d",
 				"blockReward":"0x4563918244F40000",
-				"homesteadTransition":10,
-				"ecip1010PauseTransition":25,
-				"ecip1010ContinueTransition":30,
-				"ecip1017EraRounds":5,
-				"bombDefuseTransition":35
+				"homesteadTransition":0,
+				"ecip1010PauseTransition":0,
+				"ecip1010ContinueTransition":2000000,
+				"ecip1017EraRounds":2000000,
+				"bombDefuseTransition":0
 			}
 		}
 	},
@@ -23,17 +23,17 @@
 		"minGasLimit":"0x1388",
 		"networkID":88,
 		"chainID":62,
-		"eip150Transition":15,
-		"eip160Transition":25,
-		"eip161abcTransition":40,
-		"eip161dTransition":40,
-		"eip155Transition":25,
+		"eip150Transition":0,
+		"eip160Transition":0,
+		"eip161abcTransition":100,
+		"eip161dTransition":100,
+		"eip155Transition":0,
 		"maxCodeSize":"0x6000",
-		"maxCodeSizeTransition":40,
-		"eip140Transition":40,
-		"eip211Transition":40,
-		"eip214Transition":40,
-		"eip658Transition":40
+		"maxCodeSizeTransition":100,
+		"eip140Transition":100,
+		"eip211Transition":100,
+		"eip214Transition":100,
+		"eip658Transition":100
 	},
 	"genesis":{
 		"seal":{
@@ -51,7 +51,11 @@
 	},
 	"nodes":[
 		"enode://f1505568e16f51e0e123fb6251b0aa1ea737505635ea7f52f154ad4b0d66ee86bd568c53bfebfca227bd9ed5653138a716d720a1bc8e44026e47f97a2f24f8e6@104.248.234.109:30303",
-		"enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303"
+		"enode://7c9d78fd13a80885265b90006301c7fb1ccb75695ff4b239bb9659de102287df2486f5fa06b3bd6a96c8934145721d3daa6f8c22c15230345736fecbd29e0e56@159.203.32.228:30303",
+		"enode://3df5970b1aff37c623602a9f028adb37eb52294e2d9704a4a4cbc6b7b1dc63a9ff73a152b6c7e0f6d1256949aae427f4f7f1cd00db5c2d4a7cc52e1663878a6e@104.248.234.109:30301",
+		"enode://c1c3219234174a323f3b28541dbdfa4bad5851d6cdc3d5e95b72b91ca5cdca4d1c70dcb9f45a8932be12edf8f2d8d033bce093e48fc8c904cc3571ca54e8b8f2@104.248.234.109:30303",
+		"enode://06333009fc9ef3c9e174768e495722a7f98fe7afd4660542e983005f85e556028410fd03278944f44cfe5437b1750b5e6bd1738f700fe7da3626d52010d2954c@51.141.15.254:31640",
+		"enode://a87685902a0622e9cf18c68e73a0ea45156ec53e857ef049b185a9db2296ca04d776417bf1901c0b4eacb5b26271d8694e88e3f17c20d49eb77e1a41ab26b5b3@51.141.78.53:31640"
 	],
 	"accounts":{
 		"0x0000000000000000000000000000000000000001":{
@@ -109,7 +113,7 @@
 		"0x0000000000000000000000000000000000000005":{
 			"builtin":{
 				"name":"modexp",
-				"activate_at":40,
+				"activate_at":100,
 				"pricing":{
 					"modexp":{
 						"divisor":20
@@ -122,7 +126,7 @@
 		"0x0000000000000000000000000000000000000006":{
 			"builtin":{
 				"name":"alt_bn128_add",
-				"activate_at":40,
+				"activate_at":100,
 				"pricing":{
 					"linear":{
 						"base":500,
@@ -136,7 +140,7 @@
 		"0x0000000000000000000000000000000000000007":{
 			"builtin":{
 				"name":"alt_bn128_mul",
-				"activate_at":40,
+				"activate_at":100,
 				"pricing":{
 					"linear":{
 						"base":40000,
@@ -150,7 +154,7 @@
 		"0x0000000000000000000000000000000000000008":{
 			"builtin":{
 				"name":"alt_bn128_pairing",
-				"activate_at":40,
+				"activate_at":100,
 				"pricing":{
 					"alt_bn128_pairing":{
 						"base":100000,
