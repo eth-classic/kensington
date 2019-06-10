@@ -1,17 +1,14 @@
 {
     "identity":"kensington",
     "name":"Kensington Testnet",
-    "state":{
-        "startingNonce":1048576
-    },
     "network":88,
     "consensus":"ethash",
     "genesis":{
-        "nonce":"0x00006d6f7264656e",
-        "timestamp":"0x00",
+        "nonce":"0x0000000000000539",
+        "timestamp":"0x42",
         "parentHash":"0x0000000000000000000000000000000000000000000000000000000000000000",
-        "extraData":"0x",
-        "gasLimit":"0x2FEFD8",
+        "extraData":"0xdeadbeefcafe1337",
+        "gasLimit":"0x2fefd8",
         "difficulty":"0x020000",
         "mixhash":"0x00000000000000000000000000000000000000647572616c65787365646c6578",
         "coinbase":"",
@@ -96,7 +93,7 @@
                     {
                         "id":"eip155",
                         "options":{
-                            "chainID":62
+                            "chainID":1337
                         }
                     },
                     {
@@ -158,7 +155,7 @@
 
         ]
     },
-    "bootstrap":[     
+    "bootstrap":[
 		"enode://3df5970b1aff37c623602a9f028adb37eb52294e2d9704a4a4cbc6b7b1dc63a9ff73a152b6c7e0f6d1256949aae427f4f7f1cd00db5c2d4a7cc52e1663878a6e@104.248.234.109:30301",
 		"enode://06333009fc9ef3c9e174768e495722a7f98fe7afd4660542e983005f85e556028410fd03278944f44cfe5437b1750b5e6bd1738f700fe7da3626d52010d2954c@51.141.15.254:31640",
 		"enode://a87685902a0622e9cf18c68e73a0ea45156ec53e857ef049b185a9db2296ca04d776417bf1901c0b4eacb5b26271d8694e88e3f17c20d49eb77e1a41ab26b5b3@51.141.78.53:31640",
