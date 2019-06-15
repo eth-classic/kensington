@@ -2,7 +2,11 @@
 
 A temporary Atlantis-enabled, proof-of-work testnet for Ethereum Classic.
 
+Consensus Monitoring Dashboard: http://35.226.196.242:3000/
+
 ### Parity Ethereum
+
+Required version: 2.4.7+
 
 ```bash
 parity --chain ./parity.json
@@ -10,11 +14,15 @@ parity --chain ./parity.json
 
 ### Geth Classic
 
+Required version: 6.0.0+
+
 ```bash
 geth --chain ./gethc.json
 ```
 
 ### Multi Geth
+
+Required version: 1.9.1+
 
 ##### Genesis file (legacy)
 
