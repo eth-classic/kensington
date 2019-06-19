@@ -4,6 +4,8 @@ A temporary Atlantis-enabled, proof-of-work testnet for Ethereum Classic.
 
 Consensus Monitoring Dashboard: http://35.226.196.242:3000/
 
+Atlantis Hardfork: `100`
+
 ### Parity Ethereum
 
 Required version: 2.4.7+
