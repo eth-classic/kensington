@@ -2,7 +2,7 @@
 
 A temporary Atlantis-enabled, proof-of-work testnet for Ethereum Classic.
 
-Consensus Monitoring Dashboard: http://35.226.196.242:3000/
+Consensus Monitoring Dashboard: http://35.226.196.242:3000/ (ask on ETC Discord for `WS_SECRET`)
 
 Atlantis Hardfork: `100`
 
