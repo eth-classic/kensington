@@ -37,3 +37,5 @@ geth --datadir ~/.ethereum/kensington --networkid 88
 ```bash
 geth --chainspec.parity ./parity.json
 ```
+
+_Other testnets for Atlantis are available: [Kotti](https://github.com/goerli/testnet#meta-data-kotti-classic) (Parity Ethereum, Multi Geth) or [Morden](https://github.com/eth-classic/morden) (Parity Ethereum, Geth Classic)._
