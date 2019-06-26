@@ -1,5 +1,7 @@
 # Kensington testnet
 
+[![Join the chat at https://gitter.im/eth-classic/kensington](https://badges.gitter.im/eth-classic/kensington.svg)](https://gitter.im/eth-classic/kensington?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 A temporary Atlantis-enabled, proof-of-work testnet for Ethereum Classic.
 
 Consensus Monitoring Dashboard: http://35.226.196.242:3000/ (ask on ETC Discord for `WS_SECRET`)
