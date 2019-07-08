@@ -18,7 +18,7 @@ parity --chain ./parity.json
 
 ### Geth Classic
 
-Required version: 6.0.2+
+Required version: 6.0.6+
 
 ```bash
 geth --chain ./gethc.json
