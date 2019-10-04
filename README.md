@@ -1,3 +1,7 @@
+**Update 10/2019** -- Kensington has been replaced by **Mordor**: https://github.com/eth-classic/mordor
+
+---
+
 # Kensington testnet
 
 [![Join the chat at https://gitter.im/eth-classic/kensington](https://badges.gitter.im/eth-classic/kensington.svg)](https://gitter.im/eth-classic/kensington?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
